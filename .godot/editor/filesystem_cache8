@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729289450
+::res://::1729289950
 icon.svg::CompressedTexture2D::2964332284834346548::1729287370::1729287382::1::::<><>::
 player.gd::GDScript::-1::1729287924::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::9096079612530019400::1729287942::0::1::::<><>::res://player.gd<>uid://bih7eckhbhpj5::::res://icon.svg
