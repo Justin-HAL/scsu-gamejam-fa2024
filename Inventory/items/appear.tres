@@ -9,4 +9,3 @@ script = ExtResource("1_wvyf2")
 name = "Appear"
 description = "bubbly red"
 texture = ExtResource("2_o2mv1")
-quanity = 1

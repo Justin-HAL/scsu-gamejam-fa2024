@@ -8,22 +8,18 @@ extends CharacterBody2D
 var type = "player"
 var resources_in_range = []
 func _ready():
-	collect(item)
-	collect(item)
-	collect(item)
+	pass
 func _physics_process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
-
+	get_invetory()
 	$ProgressBar.value = health
 	move_and_slide()
 
 func collect(item):
 	print("collecting item")
 	inv.insert(item)
-
-
-func _on_collection_area_body_entered(body: Node2D) -> void:
-	if body.type == "resource":
-		resources_in_range.append(body.get_instance_id()) 
-		print(resources_in_range)
+func get_invetory():
+	var slot: InvSlot = inv.get_slot(0)
+func player():
+	pass

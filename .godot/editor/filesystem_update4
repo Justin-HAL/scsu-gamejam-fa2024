@@ -1,8 +1,10 @@
 res://scenes/player.tscn
 res://Inventory/player_inv.tres
-res://Inventory/items/collection_resource.gd
-res://scripts/player.gd
-res://Inventory/items/collection_resource.tscn
+res://Resource nodes/collection_resource.gd
 res://world.tscn
 res://Resource nodes/collection_resource.tscn
-res://Resource nodes/collection_resource.gd
+res://scripts/player.gd
+res://Inventory/inventory.gd
+res://Inventory/items/appear.tres
+res://Inventory/inv_ui.tscn
+res://Inventory/InvSlot.gd

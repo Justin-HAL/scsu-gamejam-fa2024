@@ -1,23 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729305824
+::res://::1729353205
 icon.svg::CompressedTexture2D::2964332284834346548::1729287370::1729287382::1::::<><>::
 image.png::CompressedTexture2D::7957147785668549776::1729295485::1729295486::1::::<><>::
 inventory_backround.png::CompressedTexture2D::6573513491089006248::1729294441::1729294444::1::::<><>::
 player.tscn::PackedScene::5902337920938093478::1729291526::0::1::::<><>::res://player.gd<>uid://bih7eckhbhpj5::::res://icon.svg
-world.tscn::PackedScene::6152928628600017559::1729304500::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn
-::res://Inventory/::1729305522
-inventory.gd::GDScript::-1::1729301690::0::1::::inventory<>Resource<>::
+world.tscn::PackedScene::6152928628600017559::1729353372::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn<>uid://cadxw1kk3frn3::::res://Resource nodes/collection_resource.tscn<>uid://cpdre06huvg6w::::res://Resource nodes/node types/Sunflower resource.tres
+::res://Inventory/::1729353205
+inventory.gd::GDScript::-1::1729353205::0::1::::inventory<>Resource<>::
 inventory_item.gd::GDScript::-1::1729299191::0::1::::Inv_item<>Resource<>::
 InvSlot.gd::GDScript::-1::1729299217::0::1::::InvSlot<>Resource<>::
 inv_ui.gd::GDScript::-1::1729301566::0::1::::<>Control<>::
 inv_ui.tscn::PackedScene::1768832367464284388::1729302685::0::1::::<><>::res://Inventory/inv_ui.gd<>uid://c0wi2owknudg7::::res://inventory_backround.png<>uid://dwpnjdiu2dn11::::res://Inventory/inv_ui_slots.tscn
 inv_ui_slots.gd::GDScript::-1::1729300336::0::1::::<>Panel<>::
 inv_ui_slots.tscn::PackedScene::8735187841351429514::1729302686::0::1::::<><>::res://Inventory/inv_ui_slots.gd<>uid://dlmrcdci0t505::::res://image.png
-player_inv.tres::Resource/inventory::6182158556153621696::1729305522::0::1::::<><>::res://Inventory/InvSlot.gd<>res://Inventory/inventory.gd
-::res://Inventory/items/::1729305823
+player_inv.tres::Resource/inventory::6182158556153621696::1729349295::0::1::::<><>::res://Inventory/InvSlot.gd<>res://Inventory/inventory.gd
+::res://Inventory/items/::1729305831
 Among potion.tres::Resource/Inv_item::3125467592892429720::1729298094::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cfli53o8pf4bu::::res://sprites/among potion.png
-appear.tres::Resource/Inv_item::6973881678502342505::1729298146::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://dd7bmd015s5tw::::res://sprites/appear.png
-collection_resource.tscn::PackedScene::4780471660495054018::1729305823::0::1::::<><>::res://Resource nodes/collection_resource.gd
+appear.tres::Resource/Inv_item::6973881678502342505::1729353372::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://dd7bmd015s5tw::::res://sprites/appear.png
 empty bottle.tres::Resource/Inv_item::9101155501353676008::1729298232::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bpgugiwpy56gj::::res://sprites/potion1.png
 herb.tres::Resource/Inv_item::9116943680078006891::1729291999::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bih7eckhbhpj5::::res://icon.svg
 purple potion.tres::Resource/Inv_item::3133830486256232613::1729302889::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cfkpswbvmvorl::::res://sprites/Potion 3.png
@@ -26,15 +25,17 @@ SunFlower.tres::Resource/Inv_item::1483118226363202767::1729303047::0::1::::<><>
 worm.tres::Resource/Inv_item::4474418611621103930::1729302974::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://beyh5abopyssp::::res://sprites/worm.png
 ::res://music/::1729301890
 menu1.wav::AudioStreamWAV::6220565438055485272::1729301876::1729301890::1::::<><>::
-::res://Resource nodes/::1729305823
-collection_resource.gd::GDScript::-1::1729305522::0::1::::<>Node2D<>::
+::res://Resource nodes/::1729353205
+collection_resource.gd::GDScript::-1::1729352520::0::1::::<>Node2D<>::
+collection_resource.tscn::PackedScene::4780471660495054018::1729353205::0::1::::<><>::res://Resource nodes/collection_resource.gd
+tree.tres::Resource/resource_node::1651497479801806860::1729353388::0::1::::<><>::uid://tp4pysu1ucfn::::res://sprites/pine tree.png<>uid://c6mg2vcr77dft::::res://Inventory/items/appear.tres<>res://Resource nodes/resource_node.gd
 resource_node.gd::GDScript::-1::1729303584::0::1::::resource_node<>Resource<>::
 ::res://Resource nodes/node types/::1729305775
 Sunflower resource.tres::Resource/resource_node::5832907848589815252::1729305753::0::1::::<><>::uid://bih7eckhbhpj5::::res://icon.svg<>uid://dx7ucquhaah2x::::res://sprites/Sunflower.png<>uid://veo0gaxmt26n::::res://Inventory/items/SunFlower.tres<>res://Resource nodes/resource_node.gd
-::res://scenes/::1729305522
-player.tscn::PackedScene::9096079612530019400::1729305522::0::1::::<><>::res://scripts/player.gd<>uid://cucxio6cfkaa7::::res://Inventory/player_inv.tres<>uid://mijheeiw0d3e::::res://sprites/Potion man.png<>uid://bkr8821qndg53::::res://Inventory/items/Among potion.tres<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
-::res://scripts/::1729305522
-player.gd::GDScript::-1::1729305522::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1729353205
+player.tscn::PackedScene::9096079612530019400::1729353205::0::1::::<><>::res://scripts/player.gd<>uid://cucxio6cfkaa7::::res://Inventory/player_inv.tres<>uid://mijheeiw0d3e::::res://sprites/Potion man.png<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
+::res://scripts/::1729352475
+player.gd::GDScript::-1::1729352475::0::1::::<>CharacterBody2D<>::
 ::res://sprites/::1729301890
 among potion.png::CompressedTexture2D::5147034544431010146::1729297784::1729297828::1::::<><>::
 appear.png::CompressedTexture2D::7435971014055253124::1729297784::1729297828::1::::<><>::

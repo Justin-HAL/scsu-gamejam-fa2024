@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="resource_node" load_steps=4 format=3 uid="uid://xr86mcmpp1nc"]
+
+[ext_resource type="Texture2D" uid="uid://tp4pysu1ucfn" path="res://sprites/pine tree.png" id="1_taaqp"]
+[ext_resource type="Resource" uid="uid://c6mg2vcr77dft" path="res://Inventory/items/appear.tres" id="2_uybvn"]
+[ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="3_xpg1y"]
+
+[resource]
+script = ExtResource("3_xpg1y")
+full_texture = ExtResource("1_taaqp")
+resource = ExtResource("2_uybvn")
+regrow = 3
