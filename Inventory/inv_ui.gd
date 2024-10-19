@@ -6,11 +6,13 @@ var is_open = false
 
 func _ready():
 	update_slots()
+	inv.update.connect(update_slots)
 	close()
 	
 func update_slots():
-	for i in range(min(inv.items.size(),slots.size())):
-		slots[i].update(inv.items[i])
+	for i in range(min(inv.slots.size(),slots.size())):
+		slots[i].update(inv.slots[i])
+		
 func close():
 	visible = false
 	is_open = false

@@ -13,3 +13,6 @@ res://inv_ui.gd
 res://Inventory/inv_ui.gd
 res://Inventory/inv_ui_slots.tscn
 res://Inventory/inv_ui_slots.gd
+res://Inventory/player_inv.tres
+res://Inventory/inventory_item.gd
+res://InvSlot.gd

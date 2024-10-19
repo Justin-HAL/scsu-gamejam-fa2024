@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://d2wwx33j5em2c"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_mfyak"]
+[ext_resource type="Texture2D" uid="uid://bpgugiwpy56gj" path="res://sprites/potion1.png" id="2_k0pta"]
+
+[resource]
+resource_name = "empty bottle"
+script = ExtResource("1_mfyak")
+name = "empty bottle"
+description = " empty glass"
+texture = ExtResource("2_k0pta")
+quanity = 1

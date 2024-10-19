@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://c6mg2vcr77dft"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_wvyf2"]
+[ext_resource type="Texture2D" uid="uid://dd7bmd015s5tw" path="res://sprites/appear.png" id="2_o2mv1"]
+
+[resource]
+resource_name = "appear"
+script = ExtResource("1_wvyf2")
+name = "Appear"
+description = "bubbly red"
+texture = ExtResource("2_o2mv1")
+quanity = 1
