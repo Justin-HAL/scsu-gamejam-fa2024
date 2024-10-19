@@ -11,6 +11,10 @@ var direction
 var boost: int = 0
 var use_boost = false
 
+var blue_count = 0
+var purple_count = 0
+var white_count = 0
+var green_count = 0
 	
 func _physics_process(delta):
 	direction = Input.get_vector("left", "right", "up", "down")

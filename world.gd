@@ -3,8 +3,11 @@ extends Node2D
 @onready var health_bar = $"Player/Camera2D/Health icon"
 func _process(delta):
 	var health = $Player.health
+	$Player/Camera2D/purple/Label.text = str($Player.purple_count)
+	$Player/Camera2D/green/Label.text = str($Player.green_count)
+	$Player/Camera2D/White/Label.text = str($Player.white_count)
+	$Player/Camera2D/Blue/Label.text = str($Player.blue_count)
 	
-
 	if health == 100:
 		health_bar.play("Full")
 	elif health > 93:
