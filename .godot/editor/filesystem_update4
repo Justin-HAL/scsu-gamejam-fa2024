@@ -10,3 +10,17 @@ res://Resource nodes/bodies/sun_flower_body.tscn
 res://scripts/player.gd
 res://Resource nodes/node types/rose_body.tscn
 res://Resource nodes/bodies/rose_body.tscn
+res://Resource nodes/node types/Tree_body.tscn
+res://Resource nodes/collection_resource.gd
+res://Inventory/items/appear.tres
+res://Inventory/items/empty bottle.tres
+res://Inventory/items/herb.tres
+res://Inventory/items/purple potion.tres
+res://Resource nodes/node types/rose_resource.tres
+res://Resource nodes/bodies/eye_ball_body.tscn
+res://Resource nodes/eye_ball_resource.tres
+res://Resource nodes/house_body.tscn
+res://Resource nodes/worm resource.tres
+res://Resource nodes/bodies/worm_resource.tscn
+res://Resource nodes/appear_resource.tres
+res://Resource nodes/bodies/appear_body.tscn

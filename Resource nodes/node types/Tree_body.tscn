@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://diouey64jdjd"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_71uc3"]
+[ext_resource type="Texture2D" uid="uid://tp4pysu1ucfn" path="res://sprites/pine tree.png" id="2_jn1yf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7lyva"]
+radius = 4.0
+height = 8.0
+
+[node name="base_resource_body" type="StaticBody2D"]
+script = ExtResource("1_71uc3")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 9)
+shape = SubResource("CapsuleShape2D_7lyva")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_jn1yf")

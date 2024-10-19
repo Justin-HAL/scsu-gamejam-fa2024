@@ -8,4 +8,3 @@ script = ExtResource("1_je1kl")
 name = "herb"
 description = "simple herb"
 texture = ExtResource("2_04mqk")
-quanity = 1

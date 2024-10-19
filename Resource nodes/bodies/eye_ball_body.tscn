@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bd7uwq45dukl6"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_lve1h"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_u3vrm"]
+[ext_resource type="Resource" uid="uid://bmgqe4q4l06vg" path="res://Resource nodes/eye_ball_resource.tres" id="3_v4fo8"]
+[ext_resource type="Texture2D" uid="uid://drsq2t2f8petn" path="res://sprites/items/eyeball.png" id="4_5jlgp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 6.08276
+
+[node name="eye ball_body" type="StaticBody2D"]
+script = ExtResource("1_lve1h")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("2_u3vrm")]
+resource = ExtResource("3_v4fo8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_5jlgp")
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="resource_node" load_steps=3 format=3 uid="uid://bmgqe4q4l06vg"]
+
+[ext_resource type="Resource" uid="uid://b876wy72uogr8" path="res://Inventory/items/eye_ball.tres" id="1_c73db"]
+[ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="2_t1dj4"]
+
+[resource]
+script = ExtResource("2_t1dj4")
+resource = ExtResource("1_c73db")
+regrow = 6

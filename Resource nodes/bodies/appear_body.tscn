@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://qetelgi65v0s"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_8nvys"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_bswkp"]
+[ext_resource type="Resource" uid="uid://fi57iqo4nluk" path="res://Resource nodes/appear_resource.tres" id="3_at1v6"]
+[ext_resource type="Texture2D" uid="uid://dd7bmd015s5tw" path="res://sprites/appear.png" id="4_tptue"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 6.08276
+
+[node name="appear_body" type="StaticBody2D"]
+script = ExtResource("1_8nvys")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("2_bswkp")]
+resource = ExtResource("3_at1v6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_tptue")
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

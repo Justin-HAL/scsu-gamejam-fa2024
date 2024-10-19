@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="resource_node" load_steps=3 format=3 uid="uid://cbqywwd4ayytd"]
+
+[ext_resource type="Resource" uid="uid://b40paycax8xv3" path="res://Inventory/items/worm.tres" id="1_lqtxc"]
+[ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="2_3akg3"]
+
+[resource]
+script = ExtResource("2_3akg3")
+resource = ExtResource("1_lqtxc")
+regrow = 5

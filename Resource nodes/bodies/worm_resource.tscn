@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfeg8o7e0fhcl"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_8ki1w"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_byc74"]
+[ext_resource type="Resource" uid="uid://cbqywwd4ayytd" path="res://Resource nodes/worm resource.tres" id="3_s24sm"]
+[ext_resource type="Texture2D" uid="uid://beyh5abopyssp" path="res://sprites/worm.png" id="4_re7lu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 6.08276
+
+[node name="worm_resource" type="StaticBody2D"]
+script = ExtResource("1_8ki1w")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("2_byc74")]
+resource = ExtResource("3_s24sm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_re7lu")
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

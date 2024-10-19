@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://p1kk6t3han7y"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_llh68"]
+[ext_resource type="Texture2D" uid="uid://bhn3ik0yppf3k" path="res://house3.png" id="2_rvuw0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_af25x"]
+size = Vector2(38, 27)
+
+[node name="base_resource_body" type="StaticBody2D"]
+script = ExtResource("1_llh68")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(-9, -4.5)
+shape = SubResource("RectangleShape2D_af25x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_rvuw0")

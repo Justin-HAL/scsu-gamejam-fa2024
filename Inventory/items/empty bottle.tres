@@ -9,4 +9,3 @@ script = ExtResource("1_mfyak")
 name = "empty bottle"
 description = " empty glass"
 texture = ExtResource("2_k0pta")
-quanity = 1
