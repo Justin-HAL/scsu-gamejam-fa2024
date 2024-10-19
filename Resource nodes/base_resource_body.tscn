@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy1ex1m124318"]
+[gd_scene load_steps=4 format=3 uid="uid://dy1ex1m124318"]
 
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_0e6vf"]
 [ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="1_7p5qj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
 radius = 3.16228
 
 [node name="base_resource_body" type="StaticBody2D"]
+script = ExtResource("1_0e6vf")
 
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_qiaxu")
@@ -13,3 +15,6 @@ shape = SubResource("CircleShape2D_qiaxu")
 [node name="collection_resource" parent="." instance=ExtResource("1_7p5qj")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

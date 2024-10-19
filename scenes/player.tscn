@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://0g3n7yxcrv5m" path="res://Inventory/inv_ui.tscn" id="4_d6pvu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g8m0r"]
-radius = 19.5256
+radius = 9.12414
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1

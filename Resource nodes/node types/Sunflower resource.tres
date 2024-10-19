@@ -6,4 +6,4 @@
 [resource]
 script = ExtResource("4_r03su")
 resource = ExtResource("3_wfnwd")
-regrow = 10
+regrow = 3

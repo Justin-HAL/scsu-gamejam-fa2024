@@ -1,17 +1,13 @@
-res://scenes/player.tscn
-res://Inventory/player_inv.tres
-res://Resource nodes/collection_resource.gd
 res://world.tscn
+res://Inventory/player_inv.tres
+res://scenes/player.tscn
 res://Resource nodes/collection_resource.tscn
-res://scripts/player.gd
-res://Inventory/inventory.gd
-res://Inventory/items/appear.tres
 res://Inventory/inv_ui.tscn
-res://Inventory/InvSlot.gd
-res://Resource nodes/node types/Sunflower resource.tres
-res://Inventory/inventory_item.gd
 res://Inventory/inv_ui_slots.tscn
-res://Resource nodes/resource_node.gd
-res://Resource nodes/node types/tree.tres
 res://Resource nodes/base_resource_body.tscn
 res://Resource nodes/sun_flower_body.tscn
+res://Resource nodes/bodies/sun_flower_body.tscn
+res://Resource nodes/collection_resource.gd
+res://Resource nodes/base_resource_body.gd
+res://Resource nodes/bodies/sun_flower_body.gd
+res://Resource nodes/node types/Sunflower resource.tres

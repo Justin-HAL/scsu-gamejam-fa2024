@@ -25,8 +25,10 @@ patch_margin_bottom = 6
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 0
-offset_right = 88.0
-offset_bottom = 93.0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 97.0
+offset_bottom = 101.0
 columns = 4
 
 [node name="inv_ui_slots" parent="NinePatchRect/GridContainer" instance=ExtResource("3_6iycv")]
