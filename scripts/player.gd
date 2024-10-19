@@ -25,4 +25,5 @@ func collect(item):
 
 func _on_collection_area_body_entered(body: Node2D) -> void:
 	if body.type == "resource":
-		resources_in_range.append(body.get_instance_id())
+		resources_in_range.append(body.get_instance_id()) 
+		print(resources_in_range)

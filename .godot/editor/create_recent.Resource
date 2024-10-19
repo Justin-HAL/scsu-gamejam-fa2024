@@ -1,3 +1,4 @@
+resource_node
 Inv_item
 inventory
 Resource

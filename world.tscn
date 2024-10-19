@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctwr3n52p1i7x"]
+[gd_scene load_steps=4 format=3 uid="uid://ctwr3n52p1i7x"]
 
 [ext_resource type="PackedScene" uid="uid://d2uhdqhn0gyu7" path="res://scenes/player.tscn" id="1_fujh3"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_mgdi2"]
+[ext_resource type="Resource" uid="uid://cpdre06huvg6w" path="res://Resource nodes/node types/Sunflower resource.tres" id="3_ubacq"]
 
 [node name="World" type="Node2D"]
 
@@ -15,3 +17,7 @@ offset_left = -65.0
 offset_top = 365.0
 offset_right = 1159.0
 offset_bottom = 443.0
+
+[node name="collection_resource" parent="." instance=ExtResource("2_mgdi2")]
+position = Vector2(541, 154)
+resource = ExtResource("3_ubacq")

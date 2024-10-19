@@ -1,22 +1,8 @@
-res://control.tscn
-res://world.tscn
 res://scenes/player.tscn
-res://inventory_item.gd
-res://Inventory/items/herb.tres
-res://inventory.gd
-res://scripts/player.gd
-res://scenes/inv_ui.tscn
-res://Inventory/inventory.gd
-res://scenes/inv_ui.gd
-res://Inventory/inv_ui.tscn
-res://inv_ui.gd
-res://Inventory/inv_ui.gd
-res://Inventory/inv_ui_slots.tscn
-res://Inventory/inv_ui_slots.gd
 res://Inventory/player_inv.tres
-res://Inventory/inventory_item.gd
-res://InvSlot.gd
-res://Inventory/items/SunFlower.tres
-res://resource_node.gd
-res://Inventory/items/collection_resource.tscn
 res://Inventory/items/collection_resource.gd
+res://scripts/player.gd
+res://Inventory/items/collection_resource.tscn
+res://world.tscn
+res://Resource nodes/collection_resource.tscn
+res://Resource nodes/collection_resource.gd
