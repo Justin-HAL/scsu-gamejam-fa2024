@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://d25ky3l8q63e2"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_je1kl"]
+[ext_resource type="Texture2D" uid="uid://bih7eckhbhpj5" path="res://icon.svg" id="2_04mqk"]
+
+[resource]
+script = ExtResource("1_je1kl")
+name = "herb"
+description = "simple herb"
+texture = ExtResource("2_04mqk")
+quanity = 1

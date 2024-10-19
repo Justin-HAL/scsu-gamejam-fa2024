@@ -1,2 +1,15 @@
-res://player.tscn
-res://player.gd
+res://control.tscn
+res://world.tscn
+res://scenes/player.tscn
+res://inventory_item.gd
+res://Inventory/items/herb.tres
+res://inventory.gd
+res://scripts/player.gd
+res://scenes/inv_ui.tscn
+res://Inventory/inventory.gd
+res://scenes/inv_ui.gd
+res://Inventory/inv_ui.tscn
+res://inv_ui.gd
+res://Inventory/inv_ui.gd
+res://Inventory/inv_ui_slots.tscn
+res://Inventory/inv_ui_slots.gd

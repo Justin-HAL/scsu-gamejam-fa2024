@@ -1,5 +1,11 @@
-ProgressBar
 Sprite2D
+Camera2D
+GridContainer
+NinePatchRect
+ColorRect
+Panel
+Control
+CanvasLayer
+ProgressBar
 CollisionShape2D
 CharacterBody2D
-CanvasLayer
