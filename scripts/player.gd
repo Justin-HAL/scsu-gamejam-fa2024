@@ -19,10 +19,12 @@ func _physics_process(delta):
 func collect(item):
 	print("collecting item")
 	inv.insert(item)
+	
+	#before accessing invetory, make sure the item is not null
 func get_invetory():
 	item = inv.slots[0].inv_item
 	if item != null:
-		print(item.name)
+		pass
 	
 func player():
 	pass
