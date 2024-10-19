@@ -1,20 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729295485
+::res://::1729297784
 icon.svg::CompressedTexture2D::2964332284834346548::1729287370::1729287382::1::::<><>::
 image.png::CompressedTexture2D::7957147785668549776::1729295485::1729295486::1::::<><>::
 inventory_backround.png::CompressedTexture2D::6573513491089006248::1729294441::1729294444::1::::<><>::
 player.tscn::PackedScene::5902337920938093478::1729291526::0::1::::<><>::res://player.gd<>uid://bih7eckhbhpj5::::res://icon.svg
-world.tscn::PackedScene::6152928628600017559::1729295377::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn
-::res://Inventory/::1729295377
+world.tscn::PackedScene::6152928628600017559::1729297479::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn
+::res://Inventory/::1729297480
 inventory.gd::GDScript::-1::1729292551::0::1::::inventory<>Resource<>::
 inventory_item.gd::GDScript::-1::1729291809::0::1::::Inv_item<>Resource<>::
 player_inv.tres::Resource/inventory::1454174986738494566::1729292273::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://d25ky3l8q63e2::::res://Inventory/items/herb.tres<>res://Inventory/inventory.gd
-inv_ui.tscn::PackedScene::1768832367464284388::1729295377::0::1::::<><>::res://Inventory/inv_ui.gd<>uid://c0wi2owknudg7::::res://inventory_backround.png<>uid://dwpnjdiu2dn11::::res://Inventory/inv_ui_slots.tscn
-inv_ui.gd::GDScript::-1::1729294053::0::1::::<>Control<>::
-inv_ui_slots.tscn::PackedScene::8735187841351429514::1729295377::0::1::::<><>::uid://ftlbpupgt0v0::::res://inventory_pannel1.png
+inv_ui.tscn::PackedScene::1768832367464284388::1729297480::0::1::::<><>::res://Inventory/inv_ui.gd<>uid://c0wi2owknudg7::::res://inventory_backround.png<>uid://dwpnjdiu2dn11::::res://Inventory/inv_ui_slots.tscn
+inv_ui.gd::GDScript::-1::1729297262::0::1::::<>Control<>::
+inv_ui_slots.tscn::PackedScene::8735187841351429514::1729297480::0::1::::<><>::res://Inventory/inv_ui_slots.gd<>uid://dlmrcdci0t505::::res://image.png
+inv_ui_slots.gd::GDScript::-1::1729296677::0::1::::<>Panel<>::
 ::res://Inventory/items/::1729291999
 herb.tres::Resource/Inv_item::9116943680078006891::1729291999::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bih7eckhbhpj5::::res://icon.svg
-::res://scenes/::1729295377
-player.tscn::PackedScene::9096079612530019400::1729295377::0::1::::<><>::res://scripts/player.gd<>uid://bih7eckhbhpj5::::res://icon.svg<>uid://uyobxkpp3cfe::::res://Inventory/player_inv.tres<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
+::res://music/::1729297784
+test03.wav::AudioStreamWAV::219307084442624848::1729297784::1729297829::1::::<><>::
+::res://scenes/::1729297479
+player.tscn::PackedScene::9096079612530019400::1729297479::0::1::::<><>::res://scripts/player.gd<>uid://bih7eckhbhpj5::::res://icon.svg<>uid://uyobxkpp3cfe::::res://Inventory/player_inv.tres<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
 ::res://scripts/::1729292267
 player.gd::GDScript::-1::1729292266::0::1::::<>CharacterBody2D<>::
+::res://sprites/::1729297784
+among potion.png::CompressedTexture2D::5147034544431010146::1729297784::1729297828::1::::<><>::
+appear.png::CompressedTexture2D::7435971014055253124::1729297784::1729297828::1::::<><>::
+potion1.png::CompressedTexture2D::3452865114294021025::1729297784::1729297828::1::::<><>::
+Potion 3.png::CompressedTexture2D::5145373420328276557::1729297784::1729297828::1::::<><>::
+Potion man.png::CompressedTexture2D::859340315847587312::1729297784::1729297828::1::::<><>::
+rose.png::CompressedTexture2D::4034263984866772235::1729297784::1729297828::1::::<><>::
+Sunflower.png::CompressedTexture2D::8840884325914847529::1729297784::1729297828::1::::<><>::
