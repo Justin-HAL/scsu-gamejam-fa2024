@@ -1,9 +1,10 @@
-Label
-TileMapLayer
+AnimatedSprite2D
 Sprite2D
+Label
+Timer
+TileMapLayer
 CollisionShape2D
 StaticBody2D
-Timer
 Area2D
 Camera2D
 GridContainer
@@ -11,4 +12,3 @@ NinePatchRect
 ColorRect
 Panel
 Control
-CanvasLayer

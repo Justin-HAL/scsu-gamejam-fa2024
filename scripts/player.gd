@@ -1,19 +1,26 @@
 extends CharacterBody2D
 
 
-@export var speed: int = 200
+@export var default_speed: int = 200
 @export var health: int = 100
 @export var inv: inventory
 @export var item: Inv_item
 var type = "player"
 var resources_in_range = []
-func _ready():
-	pass
+var direction
+var boost: int = 0
+var use_boost = false
+
+	
 func _physics_process(delta):
-	var direction = Input.get_vector("left", "right", "up", "down")
+	direction = Input.get_vector("left", "right", "up", "down")
+	var speed = default_speed + boost
 	velocity = direction * speed
 	get_invetory()
-	$ProgressBar.value = health
+	
+	if Input.is_action_just_pressed("collect"):
+		health -= 7
+
 	move_and_slide()
 
 func collect(item):
@@ -25,6 +32,17 @@ func get_invetory():
 	item = inv.slots[0].inv_item
 	if item != null:
 		pass
+
+func speed_boost(add_speed:int):
+	boost = add_speed
+	$"Speed_ timer".start(3)
+	print("starting timer")
 	
+
+func _on_speed__timer_timeout() -> void:
+	boost = 0
+	
+func dash(distance: int):
+	position += direction * distance
 func player():
 	pass

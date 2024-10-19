@@ -19,14 +19,6 @@ inv = ExtResource("2_y5mc3")
 position = Vector2(-1, 0.5)
 shape = SubResource("CircleShape2D_g8m0r")
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = -28.0
-offset_top = 24.0
-offset_right = 28.0
-offset_bottom = 44.0
-value = 100.0
-show_percentage = false
-
 [node name="inv_ui" parent="." instance=ExtResource("4_d6pvu")]
 offset_left = -45.0
 offset_top = -110.0
@@ -35,3 +27,7 @@ offset_bottom = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("3_2mfy8")
+
+[node name="Speed_ timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Speed_ timer" to="." method="_on_speed__timer_timeout"]
