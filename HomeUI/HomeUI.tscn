@@ -1,0 +1,526 @@
+[gd_scene load_steps=16 format=3 uid="uid://c8kv0ruqhjkjc"]
+
+[ext_resource type="Texture2D" uid="uid://c34kl37bh082a" path="res://Menu&Options/Menu&OptionsStuff/MenuBackground.png" id="1_mtgx7"]
+[ext_resource type="Texture2D" uid="uid://c72ildkwsanpa" path="res://HomeUI/Textures/CraftingWindow.png" id="2_lbt0v"]
+[ext_resource type="Texture2D" uid="uid://wf7gj5emur5e" path="res://HomeUI/Textures/NoIMG.jpg" id="3_ghwk5"]
+[ext_resource type="Texture2D" uid="uid://co1ywqfbwcy7l" path="res://HomeUI/Textures/Arrow.png" id="4_5kgbr"]
+[ext_resource type="Texture2D" uid="uid://cwbd5t27870bf" path="res://HomeUI/Textures/Button2.png" id="4_lqwbk"]
+[ext_resource type="Texture2D" uid="uid://7s8aildkkbvi" path="res://HomeUI/Textures/Button1.png" id="5_e888s"]
+[ext_resource type="Texture2D" uid="uid://mijheeiw0d3e" path="res://sprites/Potion man.png" id="5_fr2nd"]
+[ext_resource type="Texture2D" uid="uid://doh0lkojeewnt" path="res://HomeUI/Textures/Arrow2.png" id="5_x7pxv"]
+[ext_resource type="Texture2D" uid="uid://81ht11d6f3ky" path="res://sprites/wood log.png" id="6_giki2"]
+[ext_resource type="Texture2D" uid="uid://bxqh0du01foop" path="res://sprites/rose.png" id="7_wxr2l"]
+[ext_resource type="FontFile" uid="uid://4wlklq27jura" path="res://Menu&Options/Fonts/SuperPixel-m2L8j.ttf" id="8_ed0uw"]
+[ext_resource type="Texture2D" uid="uid://bpgugiwpy56gj" path="res://sprites/potion1.png" id="12_76sp1"]
+[ext_resource type="FontFile" uid="uid://cppgx8q6mn67j" path="res://Menu&Options/Fonts/yoster.ttf" id="13_su64e"]
+[ext_resource type="Texture2D" uid="uid://c3ixi8esnjgp2" path="res://Menu&Options/Menu&OptionsStuff/pixil-frame-0.png" id="14_wi03v"]
+[ext_resource type="Texture2D" uid="uid://c8v6eesud84mr" path="res://Menu&Options/Menu&OptionsStuff/pixil-frame-1.png" id="15_jp8mx"]
+
+[node name="HomeUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HomeBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -636.0
+offset_top = -358.0
+offset_right = 636.0
+offset_bottom = 358.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mtgx7")
+
+[node name="CraftingBox" type="TextureRect" parent="HomeBackground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lbt0v")
+
+[node name="NewPotionIcon" type="TextureRect" parent="HomeBackground/CraftingBox"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ghwk5")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HomeBackground"]
+layout_mode = 2
+offset_left = 836.0
+offset_top = 130.0
+offset_right = 1236.0
+offset_bottom = 682.0
+scale = Vector2(0.975317, 1.01729)
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="RecipieBackground" type="TextureRect" parent="HomeBackground/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_lbt0v")
+
+[node name="TextContainer" type="MarginContainer" parent="HomeBackground/MarginContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="Recipie Info" type="Label" parent="HomeBackground/MarginContainer/TextContainer"]
+custom_minimum_size = Vector2(350, 135)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.691231, 0.435808, 0.126431, 1)
+theme_override_fonts/font = ExtResource("8_ed0uw")
+theme_override_font_sizes/font_size = 20
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HomeBackground/MarginContainer"]
+custom_minimum_size = Vector2(100, 300)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 24
+
+[node name="TextureRect" type="TextureRect" parent="HomeBackground/MarginContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+
+[node name="GridContainer" type="GridContainer" parent="HomeBackground/MarginContainer/MarginContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="TextureRect" type="TextureRect" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+texture = ExtResource("5_fr2nd")
+expand_mode = 2
+
+[node name="IngredientLabel1" type="Label" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_ed0uw")
+text = "SKIBIDI SIGMA TOILET"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+texture = ExtResource("6_giki2")
+expand_mode = 2
+
+[node name="IngredientLabel2" type="Label" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_ed0uw")
+text = "SKIBIDI SIGMA TOILET"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect3" type="TextureRect" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+texture = ExtResource("7_wxr2l")
+expand_mode = 2
+
+[node name="IngredientLabel3" type="Label" parent="HomeBackground/MarginContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_ed0uw")
+text = "SKIBIDI SIGMA TOILET"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="Control" parent="HomeBackground"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CreatePotion" type="TextureButton" parent="HomeBackground/Buttons"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 504.0
+offset_top = 522.0
+offset_right = 728.0
+offset_bottom = 642.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_lqwbk")
+texture_pressed = ExtResource("5_e888s")
+stretch_mode = 0
+
+[node name="CraftLeft" type="TextureButton" parent="HomeBackground/Buttons"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 562.0
+offset_right = 524.0
+offset_bottom = 682.0
+texture_normal = ExtResource("4_5kgbr")
+texture_pressed = ExtResource("5_x7pxv")
+stretch_mode = 0
+
+[node name="CraftRight" type="TextureButton" parent="HomeBackground/Buttons"]
+offset_left = 836.0
+offset_top = 682.0
+offset_right = 924.0
+offset_bottom = 802.0
+rotation = 3.14159
+texture_normal = ExtResource("4_5kgbr")
+texture_pressed = ExtResource("5_x7pxv")
+stretch_mode = 0
+
+[node name="InventoryLIst" type="MarginContainer" parent="HomeBackground"]
+offset_left = 25.0
+offset_top = 130.0
+offset_right = 455.0
+offset_bottom = 682.0
+scale = Vector2(0.975317, 1.01729)
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="RecipieBackground" type="TextureRect" parent="HomeBackground/InventoryLIst"]
+layout_mode = 2
+texture = ExtResource("2_lbt0v")
+
+[node name="ItemHolder" type="MarginContainer" parent="HomeBackground/InventoryLIst/RecipieBackground"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.013
+anchor_right = 0.007
+anchor_bottom = 0.013
+offset_left = 12.34
+offset_top = 13.474
+offset_right = 362.34
+offset_bottom = 475.474
+theme_override_constants/margin_left = 23
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GridContainer" type="GridContainer" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder"]
+layout_mode = 2
+columns = 2
+
+[node name="InvSlot1" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(125, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot1/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="InvSlot2" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(125, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot2/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="InvSlot3" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(125, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot3/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="InvSlot4" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(125, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot4/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="InvSlot5" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(125, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot5/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="InvSlot6" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer"]
+custom_minimum_size = Vector2(150, 148)
+layout_mode = 2
+texture = ExtResource("1_mtgx7")
+expand_mode = 2
+
+[node name="SlotImg" type="TextureRect" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.8995
+offset_top = -61.0879
+offset_right = 46.1005
+offset_bottom = 33.9121
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_76sp1")
+
+[node name="ItemCount" type="Label" parent="HomeBackground/InventoryLIst/RecipieBackground/ItemHolder/GridContainer/InvSlot6/SlotImg"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 54.5
+offset_right = 25.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("13_su64e")
+theme_override_font_sizes/font_size = 20
+text = "X 999"
+
+[node name="HomeUiTitle" type="Label" parent="HomeBackground"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 18.0
+offset_right = 1153.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0.97396, 0.722452, 0.465468, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("8_ed0uw")
+theme_override_font_sizes/font_size = 80
+text = "BREW SOME BREWS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit_Button" type="TextureButton" parent="HomeBackground"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = 22.0
+offset_right = 100.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 10
+texture_normal = ExtResource("14_wi03v")
+texture_pressed = ExtResource("15_jp8mx")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HomeBackground/Exit_Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -25.0
+offset_right = 50.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.964417, 0.221279, 0.190411, 1)
+theme_override_fonts/font = ExtResource("8_ed0uw")
+theme_override_font_sizes/font_size = 40
+text = "Exit"
+horizontal_alignment = 1
