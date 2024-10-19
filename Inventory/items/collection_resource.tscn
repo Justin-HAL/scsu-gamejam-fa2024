@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cadxw1kk3frn3"]
+
+[ext_resource type="Texture2D" uid="uid://dd7bmd015s5tw" path="res://sprites/appear.png" id="1_pigfg"]
+[ext_resource type="Script" path="res://Inventory/items/collection_resource.gd" id="1_w84y1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i6mf0"]
+radius = 60.531
+
+[node name="collection_resource" type="Node2D"]
+script = ExtResource("1_w84y1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.5, -2)
+scale = Vector2(9.88889, 6.66667)
+texture = ExtResource("1_pigfg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_i6mf0")

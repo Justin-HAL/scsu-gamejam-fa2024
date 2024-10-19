@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://veo0gaxmt26n"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_hkxiq"]
+[ext_resource type="Texture2D" uid="uid://dx7ucquhaah2x" path="res://sprites/Sunflower.png" id="2_3c4yf"]
+
+[resource]
+script = ExtResource("1_hkxiq")
+name = "Sun flower"
+description = "faces toward the sun."
+texture = ExtResource("2_3c4yf")

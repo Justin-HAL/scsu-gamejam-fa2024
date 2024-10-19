@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://b40paycax8xv3"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_pgvr7"]
+[ext_resource type="Texture2D" uid="uid://beyh5abopyssp" path="res://sprites/worm.png" id="2_ggo7y"]
+
+[resource]
+script = ExtResource("1_pgvr7")
+name = "Worm"
+description = "might be good bait"
+texture = ExtResource("2_ggo7y")

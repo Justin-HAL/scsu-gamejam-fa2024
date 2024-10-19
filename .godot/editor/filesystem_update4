@@ -16,3 +16,7 @@ res://Inventory/inv_ui_slots.gd
 res://Inventory/player_inv.tres
 res://Inventory/inventory_item.gd
 res://InvSlot.gd
+res://Inventory/items/SunFlower.tres
+res://resource_node.gd
+res://Inventory/items/collection_resource.tscn
+res://Inventory/items/collection_resource.gd

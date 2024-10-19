@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inv_item" load_steps=3 format=3 uid="uid://bkwby3f0y6fur"]
+
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="1_ogwfi"]
+[ext_resource type="Texture2D" uid="uid://cfkpswbvmvorl" path="res://sprites/Potion 3.png" id="2_iv5xk"]
+
+[resource]
+script = ExtResource("1_ogwfi")
+name = "purple"
+description = "purple brew"
+texture = ExtResource("2_iv5xk")

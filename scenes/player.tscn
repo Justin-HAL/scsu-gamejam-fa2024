@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2uhdqhn0gyu7"]
+[gd_scene load_steps=8 format=3 uid="uid://d2uhdqhn0gyu7"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_5qvob"]
 [ext_resource type="Resource" uid="uid://cucxio6cfkaa7" path="res://Inventory/player_inv.tres" id="2_y5mc3"]
@@ -8,6 +8,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djs8u"]
 size = Vector2(120, 117)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_01hyv"]
+radius = 185.097
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_5qvob")
@@ -33,7 +36,17 @@ value = 100.0
 show_percentage = false
 
 [node name="inv_ui" parent="." instance=ExtResource("4_d6pvu")]
-offset_left = 136.0
-offset_top = -101.0
-offset_right = 501.415
-offset_bottom = 103.0
+custom_minimum_size = Vector2(417, 374)
+offset_left = -208.0
+offset_top = -465.0
+offset_right = 209.0
+offset_bottom = -91.0
+
+[node name="Collection area" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collection area"]
+shape = SubResource("CircleShape2D_01hyv")
+
+[connection signal="body_entered" from="Collection area" to="." method="_on_collection_area_body_entered"]

@@ -1,34 +1,44 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729298558
+::res://::1729303118
 icon.svg::CompressedTexture2D::2964332284834346548::1729287370::1729287382::1::::<><>::
 image.png::CompressedTexture2D::7957147785668549776::1729295485::1729295486::1::::<><>::
 inventory_backround.png::CompressedTexture2D::6573513491089006248::1729294441::1729294444::1::::<><>::
 player.tscn::PackedScene::5902337920938093478::1729291526::0::1::::<><>::res://player.gd<>uid://bih7eckhbhpj5::::res://icon.svg
-player_inv.tres::Resource/inventory::6182158556153621696::1729298534::0::1::::<><>::res://Inventory/inventory_item.gd<>res://Inventory/inventory.gd
-world.tscn::PackedScene::6152928628600017559::1729298316::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn
-::res://Inventory/::1729298553
-inventory.gd::GDScript::-1::1729292551::0::1::::inventory<>Resource<>::
-inventory_item.gd::GDScript::-1::1729291809::0::1::::Inv_item<>Resource<>::
-inv_ui.gd::GDScript::-1::1729298553::0::1::::<>Control<>::
-inv_ui.tscn::PackedScene::1768832367464284388::1729298316::0::1::::<><>::res://Inventory/inv_ui.gd<>uid://c0wi2owknudg7::::res://inventory_backround.png<>uid://dwpnjdiu2dn11::::res://Inventory/inv_ui_slots.tscn
-inv_ui_slots.gd::GDScript::-1::1729296677::0::1::::<>Panel<>::
-inv_ui_slots.tscn::PackedScene::8735187841351429514::1729298316::0::1::::<><>::res://Inventory/inv_ui_slots.gd<>uid://dlmrcdci0t505::::res://image.png
-::res://Inventory/items/::1729298558
+Resource_droper.gd::GDScript::-1::1729303096::0::1::::<>Resource<>::
+world.tscn::PackedScene::6152928628600017559::1729302685::0::1::::<><>::uid://d2uhdqhn0gyu7::::res://scenes/player.tscn
+::res://Inventory/::1729302773
+inventory.gd::GDScript::-1::1729301690::0::1::::inventory<>Resource<>::
+inventory_item.gd::GDScript::-1::1729299191::0::1::::Inv_item<>Resource<>::
+InvSlot.gd::GDScript::-1::1729299217::0::1::::InvSlot<>Resource<>::
+inv_ui.gd::GDScript::-1::1729301566::0::1::::<>Control<>::
+inv_ui.tscn::PackedScene::1768832367464284388::1729302685::0::1::::<><>::res://Inventory/inv_ui.gd<>uid://c0wi2owknudg7::::res://inventory_backround.png<>uid://dwpnjdiu2dn11::::res://Inventory/inv_ui_slots.tscn
+inv_ui_slots.gd::GDScript::-1::1729300336::0::1::::<>Panel<>::
+inv_ui_slots.tscn::PackedScene::8735187841351429514::1729302686::0::1::::<><>::res://Inventory/inv_ui_slots.gd<>uid://dlmrcdci0t505::::res://image.png
+player_inv.tres::Resource/inventory::6182158556153621696::1729302773::0::1::::<><>::res://Inventory/InvSlot.gd<>res://Inventory/inventory.gd
+::res://Inventory/items/::1729303047
 Among potion.tres::Resource/Inv_item::3125467592892429720::1729298094::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cfli53o8pf4bu::::res://sprites/among potion.png
 appear.tres::Resource/Inv_item::6973881678502342505::1729298146::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://dd7bmd015s5tw::::res://sprites/appear.png
 empty bottle.tres::Resource/Inv_item::9101155501353676008::1729298232::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bpgugiwpy56gj::::res://sprites/potion1.png
 herb.tres::Resource/Inv_item::9116943680078006891::1729291999::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bih7eckhbhpj5::::res://icon.svg
-::res://music/::1729297829
-test03.wav::AudioStreamWAV::219307084442624848::1729297784::1729297829::1::::<><>::
-::res://scenes/::1729298553
-player.tscn::PackedScene::9096079612530019400::1729298553::0::1::::<><>::res://scripts/player.gd<>res://Inventory/inventory_item.gd<>uid://mijheeiw0d3e::::res://sprites/Potion man.png<>uid://bkr8821qndg53::::res://Inventory/items/Among potion.tres<>res://Inventory/inventory.gd<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
-::res://scripts/::1729292267
-player.gd::GDScript::-1::1729292266::0::1::::<>CharacterBody2D<>::
-::res://sprites/::1729297828
+purple potion.tres::Resource/Inv_item::3133830486256232613::1729302889::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cfkpswbvmvorl::::res://sprites/Potion 3.png
+Rose.tres::Resource/Inv_item::6794116080292107771::1729302999::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://bxqh0du01foop::::res://sprites/rose.png
+SunFlower.tres::Resource/Inv_item::1483118226363202767::1729303047::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://dx7ucquhaah2x::::res://sprites/Sunflower.png
+worm.tres::Resource/Inv_item::4474418611621103930::1729302974::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://beyh5abopyssp::::res://sprites/worm.png
+::res://music/::1729301890
+menu1.wav::AudioStreamWAV::6220565438055485272::1729301876::1729301890::1::::<><>::
+::res://scenes/::1729303069
+player.tscn::PackedScene::9096079612530019400::1729303069::0::1::::<><>::res://scripts/player.gd<>uid://cucxio6cfkaa7::::res://Inventory/player_inv.tres<>uid://mijheeiw0d3e::::res://sprites/Potion man.png<>uid://bkr8821qndg53::::res://Inventory/items/Among potion.tres<>uid://0g3n7yxcrv5m::::res://Inventory/inv_ui.tscn
+::res://scripts/::1729301783
+player.gd::GDScript::-1::1729301783::0::1::::<>CharacterBody2D<>::
+::res://sprites/::1729301890
 among potion.png::CompressedTexture2D::5147034544431010146::1729297784::1729297828::1::::<><>::
 appear.png::CompressedTexture2D::7435971014055253124::1729297784::1729297828::1::::<><>::
+Health bar sheet.png::CompressedTexture2D::8831395361780127255::1729301876::1729301890::1::::<><>::
+pine tree.png::CompressedTexture2D::1366342564443437567::1729301876::1729301890::1::::<><>::
 potion1.png::CompressedTexture2D::3452865114294021025::1729297784::1729297828::1::::<><>::
 Potion 3.png::CompressedTexture2D::5145373420328276557::1729297784::1729297828::1::::<><>::
 Potion man.png::CompressedTexture2D::859340315847587312::1729297784::1729297828::1::::<><>::
 rose.png::CompressedTexture2D::4034263984866772235::1729297784::1729297828::1::::<><>::
 Sunflower.png::CompressedTexture2D::8840884325914847529::1729297784::1729297828::1::::<><>::
+wood log.png::CompressedTexture2D::2370366016644161620::1729301876::1729301890::1::::<><>::
+worm.png::CompressedTexture2D::2717199719311087467::1729301876::1729301890::1::::<><>::

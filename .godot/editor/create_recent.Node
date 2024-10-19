@@ -1,6 +1,9 @@
-Label
+CollisionShape2D
+Area2D
+StaticBody2D
 Sprite2D
 Camera2D
+Label
 GridContainer
 NinePatchRect
 ColorRect
@@ -8,5 +11,4 @@ Panel
 Control
 CanvasLayer
 ProgressBar
-CollisionShape2D
 CharacterBody2D
