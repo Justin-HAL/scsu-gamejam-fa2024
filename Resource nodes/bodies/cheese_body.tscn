@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://bldcjerkwefqr"]
+
+[ext_resource type="Script" path="res://Resource nodes/base_resource_body.gd" id="1_2x32m"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_jvbbj"]
+[ext_resource type="Resource" uid="uid://csap1td3ki1m0" path="res://Resource nodes/cheese resource.tres" id="3_7xmce"]
+[ext_resource type="Texture2D" uid="uid://cv3pybf5yxmu2" path="res://sprites/items/Cheese.png" id="4_vjvjn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 4.24264
+
+[node name="cheese_body" type="StaticBody2D"]
+script = ExtResource("1_2x32m")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("2_jvbbj")]
+scale = Vector2(1.5, 1.5)
+resource = ExtResource("3_7xmce")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_vjvjn")
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

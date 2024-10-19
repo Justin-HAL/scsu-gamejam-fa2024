@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="resource_node" load_steps=3 format=3 uid="uid://csap1td3ki1m0"]
+
+[ext_resource type="Resource" uid="uid://b58644jl2lu2q" path="res://Inventory/items/cheese.tres" id="1_buitd"]
+[ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="2_iwxvi"]
+
+[resource]
+script = ExtResource("2_iwxvi")
+resource = ExtResource("1_buitd")
+regrow = 5

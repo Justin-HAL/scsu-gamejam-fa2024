@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bxqh0du01foop" path="res://sprites/rose.png" id="4_jwexw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
-radius = 6.08276
+radius = 4.24264
 
 [node name="rose_body" type="StaticBody2D"]
 script = ExtResource("1_dxb7l")

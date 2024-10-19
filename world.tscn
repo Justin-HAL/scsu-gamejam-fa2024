@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://ctwr3n52p1i7x"]
+[gd_scene load_steps=19 format=4 uid="uid://ctwr3n52p1i7x"]
 
 [ext_resource type="PackedScene" uid="uid://d2uhdqhn0gyu7" path="res://scenes/player.tscn" id="1_fujh3"]
 [ext_resource type="Texture2D" uid="uid://dn5q73r2cc5o5" path="res://sprites/Tile_sets/water tile-export.png" id="3_amstc"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bd7uwq45dukl6" path="res://Resource nodes/bodies/eye_ball_body.tscn" id="10_s786k"]
 [ext_resource type="PackedScene" uid="uid://bfeg8o7e0fhcl" path="res://Resource nodes/bodies/worm_resource.tscn" id="11_ll6g7"]
 [ext_resource type="PackedScene" uid="uid://qetelgi65v0s" path="res://Resource nodes/bodies/appear_body.tscn" id="12_ajo5c"]
+[ext_resource type="PackedScene" uid="uid://bldcjerkwefqr" path="res://Resource nodes/bodies/cheese_body.tscn" id="13_bp8ad"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pewcl"]
 texture = ExtResource("3_amstc")
@@ -316,3 +317,12 @@ position = Vector2(1840, 95)
 
 [node name="appear_body13" parent="." instance=ExtResource("12_ajo5c")]
 position = Vector2(1592, 158)
+
+[node name="cheese_body" parent="." instance=ExtResource("13_bp8ad")]
+position = Vector2(1589, -728)
+
+[node name="cheese_body2" parent="." instance=ExtResource("13_bp8ad")]
+position = Vector2(1530, -790)
+
+[node name="cheese_body3" parent="." instance=ExtResource("13_bp8ad")]
+position = Vector2(1620, -795)
