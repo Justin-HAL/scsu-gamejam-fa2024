@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-@export var speed = 40
-@export var health = 100
+@export var speed: int = 200
+@export var health: int = 100
 @export var inv: inventory
 @export var item: Inv_item
 var type = "player"

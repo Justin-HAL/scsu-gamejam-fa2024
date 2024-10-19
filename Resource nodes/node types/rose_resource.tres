@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="resource_node" load_steps=3 format=3 uid="uid://dnbrh4rqkavah"]
+
+[ext_resource type="Resource" uid="uid://c32edmxlns2l0" path="res://Inventory/items/Rose.tres" id="1_ohuk6"]
+[ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="2_b7k8s"]
+
+[resource]
+script = ExtResource("2_b7k8s")
+resource = ExtResource("1_ohuk6")
+regrow = 3

@@ -1,12 +1,12 @@
-res://Resource nodes/base_resource_body.tscn
+res://world.tscn
 res://Inventory/player_inv.tres
 res://Resource nodes/bodies/sun_flower_body.gd
-res://Resource nodes/base_resource_body.gd
-res://Resource nodes/bodies/sun_flower_body.tscn
 res://scenes/player.tscn
-res://world.tscn
 res://Resource nodes/collection_resource.tscn
 res://Inventory/inv_ui.tscn
 res://Inventory/inv_ui_slots.tscn
-res://Resource nodes/collection_resource.gd
+res://Resource nodes/base_resource_body.tscn
+res://Resource nodes/bodies/sun_flower_body.tscn
 res://scripts/player.gd
+res://Resource nodes/node types/rose_body.tscn
+res://Resource nodes/bodies/rose_body.tscn
