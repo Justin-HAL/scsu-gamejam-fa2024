@@ -5,8 +5,12 @@ extends StaticBody2D
 
 
 func _on_collection_resource_collected() -> void:
-	pass
+	print("signal: collected")
+	visible = false
+	$collision.disabled = true
 
 
 func _on_collection_resource_respawned() -> void:
-	pass
+	print("signal: respawned")
+	visible = true
+	$collision.disabled = false

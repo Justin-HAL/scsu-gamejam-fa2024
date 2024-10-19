@@ -18,6 +18,7 @@ func harvest():
 	can_collect = false
 	collected.emit()
 	player.collect(resource.resource)
+	$regrow.start(resource.regrow)
 
 	
 	

@@ -4,8 +4,9 @@ extends StaticBody2D
 
 
 func _on_collection_resource_collected() -> void:
-	self.visible = false
-
+	visible = false
+	$collision.disabled = true
 
 func _on_collection_resource_respawned() -> void:
-	self.visible = true
+	visible = true
+	$collision.disabled = false
