@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://0g3n7yxcrv5m" path="res://Inventory/inv_ui.tscn" id="4_d6pvu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g8m0r"]
-radius = 62.0504
+radius = 19.5256
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 3
@@ -18,22 +18,19 @@ inv = ExtResource("2_y5mc3")
 position = Vector2(-1, 0.5)
 shape = SubResource("CircleShape2D_g8m0r")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(3.33786e-06, 0.499999)
-scale = Vector2(6.875, 7.4375)
-texture = ExtResource("3_2mfy8")
-
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = -118.0
-offset_top = 71.0
-offset_right = 122.0
-offset_bottom = 108.0
+offset_left = -28.0
+offset_top = 24.0
+offset_right = 28.0
+offset_bottom = 44.0
 value = 100.0
 show_percentage = false
 
 [node name="inv_ui" parent="." instance=ExtResource("4_d6pvu")]
-custom_minimum_size = Vector2(417, 374)
-offset_left = -208.0
-offset_top = -465.0
-offset_right = 209.0
-offset_bottom = -91.0
+offset_left = -45.0
+offset_top = -110.0
+offset_right = 45.0
+offset_bottom = -20.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_2mfy8")

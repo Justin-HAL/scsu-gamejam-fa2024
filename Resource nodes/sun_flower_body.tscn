@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dujq12hfjp852"]
+
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="1_6y0bb"]
+[ext_resource type="Resource" uid="uid://cpdre06huvg6w" path="res://Resource nodes/node types/Sunflower resource.tres" id="2_oppdu"]
+[ext_resource type="Texture2D" uid="uid://dx7ucquhaah2x" path="res://sprites/Sunflower.png" id="3_7d8s5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 3.16228
+
+[node name="SunFlower_body" type="StaticBody2D"]
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("1_6y0bb")]
+resource = ExtResource("2_oppdu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_7d8s5")

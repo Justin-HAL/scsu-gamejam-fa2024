@@ -17,6 +17,5 @@ func insert(item: Inv_item):
 			emptyslots[0].amount = 1
 	update.emit()
 
-func get_slot(index: int):
-	return slots[index]
+
 			

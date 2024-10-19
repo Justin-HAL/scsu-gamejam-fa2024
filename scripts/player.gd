@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var speed = 200
+@export var speed = 64
 @export var health = 100
 @export var inv: inventory
 @export var item: Inv_item
@@ -20,6 +20,9 @@ func collect(item):
 	print("collecting item")
 	inv.insert(item)
 func get_invetory():
-	var slot: InvSlot = inv.get_slot(0)
+	item = inv.slots[0].inv_item
+	if item != null:
+		print(item.name)
+	
 func player():
 	pass

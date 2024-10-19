@@ -1,13 +1,9 @@
-[gd_resource type="Resource" script_class="resource_node" load_steps=5 format=3 uid="uid://cpdre06huvg6w"]
+[gd_resource type="Resource" script_class="resource_node" load_steps=3 format=3 uid="uid://cpdre06huvg6w"]
 
-[ext_resource type="Texture2D" uid="uid://bih7eckhbhpj5" path="res://icon.svg" id="1_232cl"]
-[ext_resource type="Texture2D" uid="uid://dx7ucquhaah2x" path="res://sprites/Sunflower.png" id="2_g4wps"]
 [ext_resource type="Resource" uid="uid://veo0gaxmt26n" path="res://Inventory/items/SunFlower.tres" id="3_wfnwd"]
 [ext_resource type="Script" path="res://Resource nodes/resource_node.gd" id="4_r03su"]
 
 [resource]
 script = ExtResource("4_r03su")
-full_texture = ExtResource("2_g4wps")
-depleted_texture = ExtResource("1_232cl")
 resource = ExtResource("3_wfnwd")
 regrow = 10

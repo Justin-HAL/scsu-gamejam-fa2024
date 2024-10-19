@@ -1,8 +1,8 @@
-Timer
-CollisionShape2D
-Area2D
-StaticBody2D
 Sprite2D
+CollisionShape2D
+StaticBody2D
+Timer
+Area2D
 Camera2D
 Label
 GridContainer
@@ -12,4 +12,3 @@ Panel
 Control
 CanvasLayer
 ProgressBar
-CharacterBody2D
