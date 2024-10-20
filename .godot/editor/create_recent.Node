@@ -1,12 +1,12 @@
+Label
+CanvasLayer
+Sprite2D
 Timer
 CollisionShape2D
-CanvasLayer
 Button
 Area2D
 StaticBody2D
 AnimatedSprite2D
-Sprite2D
-Label
 TileMapLayer
 Camera2D
 GridContainer

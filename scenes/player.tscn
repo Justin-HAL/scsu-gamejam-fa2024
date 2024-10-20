@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_5qvob"]
 [ext_resource type="Resource" uid="uid://cucxio6cfkaa7" path="res://Inventory/player_inv.tres" id="2_y5mc3"]
 [ext_resource type="PackedScene" uid="uid://0g3n7yxcrv5m" path="res://Inventory/inv_ui.tscn" id="4_d6pvu"]
-[ext_resource type="Texture2D" uid="uid://qg31pvna0jg" path="res://sprites/new sprite/npc and enemies/Potion man.png" id="4_vqmtm"]
+[ext_resource type="Texture2D" uid="uid://2h66i5o11bnh" path="res://sprites/new sprite/npc and enemies/vil.png" id="4_slntl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g8m0r"]
 radius = 9.12414
@@ -29,7 +29,7 @@ offset_right = 45.0
 offset_bottom = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("4_vqmtm")
+texture = ExtResource("4_slntl")
 
 [node name="Speed_ timer" type="Timer" parent="."]
 

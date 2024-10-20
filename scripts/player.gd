@@ -15,11 +15,11 @@ var use_boost = false
 var blue_count = 5
 var purple_count = 5
 var white_count = 5
-var green_count = 5
+var green_count = 1000
 #////////////////////////////////////////////
 var can_walk_on_water: bool = false
 #////////////////////////////////////////////
-@onready var default_texture: Texture2D = preload("res://sprites/Potion man.png")
+@onready var default_texture: Texture2D = preload("res://sprites/new sprite/npc and enemies/vil.png")
 @onready var snail_texture:Texture2D = preload("res://sprites/new sprite/npc and enemies/Potion slug.png")
 var transformed = false
 
@@ -38,6 +38,7 @@ func _physics_process(delta):
 			blue_count -= 1
 	if Input.is_action_just_pressed("transform"):
 		if purple_count > 0:
+			transformed = true
 			transformation()
 			purple_count -= 1
 	if Input.is_action_just_pressed("speed"):
@@ -46,7 +47,7 @@ func _physics_process(delta):
 			white_count -= 1
 	if Input.is_action_just_pressed("dash"):
 		if green_count > 0:
-			dash(50)
+			dash(500)
 			green_count -= 1
 	
 		
@@ -75,16 +76,12 @@ func _on_speed__timer_timeout() -> void:
 func dash(distance: int):
 	position += direction * distance
 func transformation():
-	print("transforming")
-	if !transformed:
-		transformed = true
+	
+	if transformed:
 		$Sprite2D.texture=snail_texture
 		$"Main collision".disabled = true
 		$transfomr_timer.start(10)
-	else:
-		transformed = false
-		$Sprite2D.texture= default_texture
-		$"Main collision".disabled = false
+		
 func player():
 	pass
 
@@ -94,4 +91,6 @@ func _on_water_timer_timeout() -> void:
 
 
 func _on_transfomr_timer_timeout() -> void:
-	transformation()
+	transformed = false
+	$Sprite2D.texture= default_texture
+	$"Main collision".disabled = false

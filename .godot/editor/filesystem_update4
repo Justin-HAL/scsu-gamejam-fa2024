@@ -11,3 +11,5 @@ res://world.gd
 res://Resource nodes/bodies/sun_flower_body.tscn
 res://Resource nodes/carrot_resource.tres
 res://Resource nodes/bodies/carrot_body.tscn
+res://Resource nodes/collection_resource.gd
+res://Resource nodes/bodies/jack_black_body.tscn

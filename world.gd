@@ -16,6 +16,11 @@ func _process(delta):
 		$"Water collision/bridge".disabled = false
 		$"Water collision/Upper".disabled = false
 		$"Water collision/Lower".disabled = false
+		
+	if	$"Jack Black body".show:
+		$"Player/Camera2D/JackBlack photo".visible = true
+	else:
+		$"Player/Camera2D/JackBlack photo".visible = false
 	
 	if health == 100:
 		health_bar.play("Full")
