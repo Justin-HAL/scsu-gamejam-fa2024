@@ -17,16 +17,30 @@ var purple_count = 0
 var white_count = 0
 var green_count = 0
 #////////////////////////////////////////////
-var can_walk_on_water: bool = true	
+var can_walk_on_water: bool = false
+#////////////////////////////////////////////
+@onready var default_texture: Texture2D = preload("res://sprites/Potion man.png")
+@onready var snail_texture:Texture2D = preload("res://sprites/new sprite/npc and enemies/Potion slug.png")
+var transformed = false
+
+func _ready():
+	$Sprite2D.texture = default_texture
 func _physics_process(delta):
 	direction = Input.get_vector("left", "right", "up", "down")
 	var speed = default_speed + boost
 	velocity = direction * speed
 	get_invetory()
 	
-	if Input.is_action_just_pressed("collect"):
-		health -= 7
-
+	if Input.is_action_just_pressed("water"):
+		can_walk_on_water = !can_walk_on_water
+	if Input.is_action_just_pressed("transform"):
+		transformation()
+	if Input.is_action_just_pressed("speed"):
+		speed_boost(50,3)
+	if Input.is_action_just_pressed("dash"):
+		dash(50)
+	
+		
 	move_and_slide()
 
 func collect(item):
@@ -39,16 +53,27 @@ func get_invetory():
 	if item != null:
 		pass
 
-func speed_boost(add_speed:int):
+func speed_boost(add_speed:int, time:int):
 	boost = add_speed
-	$"Speed_ timer".start(3)
+	$"Speed_ timer".start(time)
 	print("starting timer")
 	
 
 func _on_speed__timer_timeout() -> void:
 	boost = 0
+	print("end time")
 	
 func dash(distance: int):
 	position += direction * distance
+func transformation():
+	print("transforming")
+	if !transformed:
+		transformed = true
+		$Sprite2D.texture=snail_texture
+		$"Main collision".disabled = true
+	else:
+		transformed = false
+		$Sprite2D.texture= default_texture
+		$"Main collision".disabled = false
 func player():
 	pass

@@ -44,3 +44,7 @@ func _process(delta):
 	else:
 		health_bar.play("2")
 	
+
+
+func _on_back_to_spawn_pressed() -> void:
+	$Player.position = Vector2(0,0)

@@ -1,4 +1,6 @@
 CollisionShape2D
+CanvasLayer
+Button
 Area2D
 StaticBody2D
 AnimatedSprite2D
@@ -10,5 +12,3 @@ Camera2D
 GridContainer
 NinePatchRect
 ColorRect
-Panel
-Control

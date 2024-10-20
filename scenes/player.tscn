@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://d2uhdqhn0gyu7"]
+[gd_scene load_steps=7 format=3 uid="uid://d2uhdqhn0gyu7"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_5qvob"]
 [ext_resource type="Resource" uid="uid://cucxio6cfkaa7" path="res://Inventory/player_inv.tres" id="2_y5mc3"]
-[ext_resource type="Texture2D" uid="uid://mijheeiw0d3e" path="res://sprites/Potion man.png" id="3_2mfy8"]
 [ext_resource type="PackedScene" uid="uid://0g3n7yxcrv5m" path="res://Inventory/inv_ui.tscn" id="4_d6pvu"]
+[ext_resource type="Texture2D" uid="uid://qg31pvna0jg" path="res://sprites/new sprite/npc and enemies/Potion man.png" id="4_vqmtm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g8m0r"]
 radius = 9.12414
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1nps"]
+size = Vector2(10, 9)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
@@ -15,7 +18,7 @@ collision_mask = 3
 script = ExtResource("1_5qvob")
 inv = ExtResource("2_y5mc3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Main collision" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0.5)
 shape = SubResource("CircleShape2D_g8m0r")
 
@@ -26,8 +29,12 @@ offset_right = 45.0
 offset_bottom = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_2mfy8")
+texture = ExtResource("4_vqmtm")
 
 [node name="Speed_ timer" type="Timer" parent="."]
+
+[node name="snail_transform collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_c1nps")
 
 [connection signal="timeout" from="Speed_ timer" to="." method="_on_speed__timer_timeout"]
