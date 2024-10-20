@@ -52,6 +52,13 @@ func _physics_process(delta):
 	
 		
 	move_and_slide()
+	# Rotates only the sprite
+	if direction != Vector2.ZERO:
+		var sprite = $Sprite2D
+		if direction.x < 0: 
+			sprite.rotation -= 10 * delta  
+		else: 
+			sprite.rotation += 10 * delta  
 
 func collect(item):
 	print("collecting item")
