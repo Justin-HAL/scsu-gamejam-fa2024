@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bpbb4uauyv724"
+path="res://.godot/imported/563542__colorscrimsontears__teleport-rpg.wav-95e2370db9b7a82d2413df8930a17b60.sample"
+
+[deps]
+
+source_file="res://sound effects/563542__colorscrimsontears__teleport-rpg.wav"
+dest_files=["res://.godot/imported/563542__colorscrimsontears__teleport-rpg.wav-95e2370db9b7a82d2413df8930a17b60.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var health_bar = $"Player/Camera2D/Health icon"
+
 func _process(delta):
 	var health = $Player.health
 	$Player/Camera2D/purple/Label.text = str($Player.purple_count)
@@ -53,3 +54,13 @@ func _process(delta):
 
 func _on_back_to_spawn_pressed() -> void:
 	$Player.position = Vector2(0,0)
+
+
+func _on_pilar_spawn_body_entered(body: Node2D) -> void:
+	if body.has_method("player"):
+		print("spawning pilar")
+		var foo = load("res://Resource nodes/bodies/Pilar.tscn").instantiate()
+		foo.position = $"pilar spawn point".position
+		foo.starting_position = foo.position
+		add_child(foo)
+		

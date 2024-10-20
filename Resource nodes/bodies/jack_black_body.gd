@@ -6,25 +6,15 @@ signal respawned
 var can_collect = true
 var player_in_range = false
 var player = null
-
+var show = false
 func _ready():
 	$Label.visible = false
 
 func _process(delta: float) -> void:
 	if player_in_range:
 		if Input.is_action_just_pressed("collect"):
-			if can_collect:
-				harvest()
+			show = true
 
-		
-func harvest():
-	can_collect = false
-	collected.emit()
-	player.collect(resource.resource)
-	$regrow.start(resource.regrow)
-
-	
-	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
@@ -36,9 +26,7 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		player_in_range = false
 		player = null
 		$Label.visible = false
+		show = false
 
-func _on_regrow_timeout() -> void:
-	if !can_collect:
-		can_collect = true
-		respawned.emit()
+
 		

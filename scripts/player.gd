@@ -43,11 +43,11 @@ func _physics_process(delta):
 			purple_count -= 1
 	if Input.is_action_just_pressed("speed"):
 		if white_count > 0:
-			speed_boost(50,3)
+			speed_boost(60,3)
 			white_count -= 1
 	if Input.is_action_just_pressed("dash"):
 		if green_count > 0:
-			dash(500)
+			dash(50)
 			green_count -= 1
 	
 		

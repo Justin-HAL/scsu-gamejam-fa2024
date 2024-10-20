@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://7xdio12wd0v5"]
+
+[ext_resource type="Script" path="res://Resource nodes/bodies/pilar.gd" id="1_xd5k2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vmsn"]
+size = Vector2(24, 1222)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7qqq"]
+size = Vector2(48, 1545)
+
+[node name="pilar" type="CharacterBody2D"]
+z_index = 10
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_xd5k2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-22, 464)
+shape = SubResource("RectangleShape2D_7vmsn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -208.0
+offset_top = -448.0
+offset_right = 21.0
+offset_bottom = 1145.0
+color = Color(0.423651, 0.423651, 0.423651, 1)
+
+[node name="Kill" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kill"]
+position = Vector2(-7, 314.5)
+shape = SubResource("RectangleShape2D_m7qqq")
+
+[connection signal="body_entered" from="Kill" to="." method="_on_kill_body_entered"]
