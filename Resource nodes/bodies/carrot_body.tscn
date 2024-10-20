@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvdc1j7o0j1m"]
+
+[ext_resource type="Script" path="res://Resource nodes/bodies/sun_flower_body.gd" id="1_eiybd"]
+[ext_resource type="PackedScene" uid="uid://cadxw1kk3frn3" path="res://Resource nodes/collection_resource.tscn" id="2_g81ii"]
+[ext_resource type="Resource" uid="uid://0i7egvxhkylu" path="res://Resource nodes/carrot_resource.tres" id="3_0ympc"]
+[ext_resource type="Texture2D" uid="uid://belrp23lnrov6" path="res://sprites/items/carrot.png" id="4_1ajvk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qiaxu"]
+radius = 3.16228
+
+[node name="carrot_body" type="StaticBody2D"]
+z_index = 1
+script = ExtResource("1_eiybd")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qiaxu")
+
+[node name="collection_resource" parent="." instance=ExtResource("2_g81ii")]
+resource = ExtResource("3_0ympc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("4_1ajvk")
+
+[connection signal="collected" from="collection_resource" to="." method="_on_collection_resource_collected"]
+[connection signal="respawned" from="collection_resource" to="." method="_on_collection_resource_respawned"]

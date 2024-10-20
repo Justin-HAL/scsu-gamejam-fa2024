@@ -8,6 +8,15 @@ func _process(delta):
 	$Player/Camera2D/White/Label.text = str($Player.white_count)
 	$Player/Camera2D/Blue/Label.text = str($Player.blue_count)
 	
+	if $Player.can_walk_on_water:
+		$"Water collision/bridge".disabled = true
+		$"Water collision/Upper".disabled = true
+		$"Water collision/Lower".disabled = true
+	else:
+		$"Water collision/bridge".disabled = false
+		$"Water collision/Upper".disabled = false
+		$"Water collision/Lower".disabled = false
+	
 	if health == 100:
 		health_bar.play("Full")
 	elif health > 93:

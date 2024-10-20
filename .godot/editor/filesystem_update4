@@ -2,14 +2,12 @@ res://world.tscn
 res://Inventory/player_inv.tres
 res://Resource nodes/bodies/sun_flower_body.gd
 res://Inventory/items/appear.tres
-res://Resource nodes/bodies/rose_body.tscn
 res://scenes/player.tscn
 res://Resource nodes/collection_resource.tscn
 res://Inventory/inv_ui.tscn
 res://Inventory/inv_ui_slots.tscn
-res://Resource nodes/bodies/eye_ball_body.tscn
-res://Resource nodes/bodies/appear_body.tscn
-res://Resource nodes/bodies/cheese_body.tscn
 res://scripts/player.gd
-res://scenes/Health_bar.tscn
 res://world.gd
+res://Resource nodes/bodies/sun_flower_body.tscn
+res://Resource nodes/carrot_resource.tres
+res://Resource nodes/bodies/carrot_body.tscn

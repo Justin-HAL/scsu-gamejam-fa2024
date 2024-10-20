@@ -8,14 +8,16 @@ extends CharacterBody2D
 var type = "player"
 var resources_in_range = []
 var direction
+#/////////////////////////////////////////////
 var boost: int = 0
 var use_boost = false
-
+#////////////////////////////////////////////
 var blue_count = 0
 var purple_count = 0
 var white_count = 0
 var green_count = 0
-	
+#////////////////////////////////////////////
+var can_walk_on_water: bool = true	
 func _physics_process(delta):
 	direction = Input.get_vector("left", "right", "up", "down")
 	var speed = default_speed + boost
