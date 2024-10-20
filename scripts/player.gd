@@ -12,10 +12,10 @@ var direction
 var boost: int = 0
 var use_boost = false
 #////////////////////////////////////////////
-var blue_count = 0
-var purple_count = 0
-var white_count = 0
-var green_count = 0
+var blue_count = 5
+var purple_count = 5
+var white_count = 5
+var green_count = 5
 #////////////////////////////////////////////
 var can_walk_on_water: bool = false
 #////////////////////////////////////////////
@@ -32,13 +32,22 @@ func _physics_process(delta):
 	get_invetory()
 	
 	if Input.is_action_just_pressed("water"):
-		can_walk_on_water = !can_walk_on_water
+		if blue_count > 0:
+			can_walk_on_water = !can_walk_on_water
+			$"Water timer".start(10)
+			blue_count -= 1
 	if Input.is_action_just_pressed("transform"):
-		transformation()
+		if purple_count > 0:
+			transformation()
+			purple_count -= 1
 	if Input.is_action_just_pressed("speed"):
-		speed_boost(50,3)
+		if white_count > 0:
+			speed_boost(50,3)
+			white_count -= 1
 	if Input.is_action_just_pressed("dash"):
-		dash(50)
+		if green_count > 0:
+			dash(50)
+			green_count -= 1
 	
 		
 	move_and_slide()
@@ -71,9 +80,18 @@ func transformation():
 		transformed = true
 		$Sprite2D.texture=snail_texture
 		$"Main collision".disabled = true
+		$transfomr_timer.start(10)
 	else:
 		transformed = false
 		$Sprite2D.texture= default_texture
 		$"Main collision".disabled = false
 func player():
 	pass
+
+
+func _on_water_timer_timeout() -> void:
+	can_walk_on_water = false
+
+
+func _on_transfomr_timer_timeout() -> void:
+	transformation()

@@ -39,8 +39,5 @@ shape = SubResource("RectangleShape2D_c1nps")
 
 [node name="Water timer" type="Timer" parent="."]
 
-[node name="transfomr_timer" type="Timer" parent="."]
-
 [connection signal="timeout" from="Speed_ timer" to="." method="_on_speed__timer_timeout"]
 [connection signal="timeout" from="Water timer" to="." method="_on_water_timer_timeout"]
-[connection signal="timeout" from="transfomr_timer" to="." method="_on_transfomr_timer_timeout"]
