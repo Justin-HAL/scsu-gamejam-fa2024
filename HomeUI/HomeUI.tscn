@@ -199,6 +199,7 @@ texture_pressed = ExtResource("5_x7pxv")
 stretch_mode = 0
 
 [node name="CraftRight" type="TextureButton" parent="HomeBackground/Buttons"]
+layout_mode = 0
 offset_left = 836.0
 offset_top = 682.0
 offset_right = 924.0
@@ -209,6 +210,7 @@ texture_pressed = ExtResource("5_x7pxv")
 stretch_mode = 0
 
 [node name="InventoryLIst" type="MarginContainer" parent="HomeBackground"]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 130.0
 offset_right = 455.0
